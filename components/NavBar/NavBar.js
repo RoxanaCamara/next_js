@@ -26,7 +26,7 @@ export const NavBar = () => {
     <div className={styles.menu}>
     {
       menuItems.map( m => {
-        return <ActiveLinks href={m.href} text={m.text}/> 
+        return <ActiveLinks key={m.href} href={m.href} text={m.text}/> 
       })
     }
     </div>
